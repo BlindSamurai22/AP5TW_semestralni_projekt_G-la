@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="styly.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">Počasí</h3>
+            <div>
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">London</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">
+                            Monday Sep 19
+                        </span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./icons/day/113.png" class="icon" alt="icon" width="50" height="50"/>
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input type="text" class="search" placeholder="Search Location..."/>
+                <button type="submit" class="subit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <i class=" favourite bi bi-heart-fill"></i>
+
+            <ul class="cities">
+                <h4>Oblíbená města</h4>
+                <li class="city" id="Zlín"><span class="click">Zlín</span></li>
+                <li class="city" id="Praha"><span class="click">Praha</span></li>
+                <li class="city" id="Brno"><span class="click">Brno</span></li>
+            </ul>
+
+            <ul class="details">
+                <h4>Detaily počasí</h4>
+                <li>
+                    <span>Oblačnost</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Vlhkost vzduchu</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Rychlost větru</span>
+                    <span class="wind">8km/h</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
